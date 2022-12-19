@@ -11,7 +11,7 @@ If you want to copy the entire local directory to the server, then you can add t
 
 ``` scp -r localmachine/path_to_the_directory username@server_ip:/path_to_remote_directory/ ```
 
-To copy all the files inside a local directory to a remote directory?  simply, just add a forward slash and * at the end of source directory and give the path of destination directory. Don’t forget to add the -r flag to the command:
+To copy all the files inside a local directory to a remote directory?  simply, just add a forward slash and * at the end of source directory and give the path of destination directory. == Don’t forget to add the -r flag to the command ==
 
 ``` scp -r localmachine/path_to_the_directory/* username@server_ip:/path_to_remote_directory/ ```
 
@@ -26,7 +26,7 @@ If you want to make a copy of a single file, a directory or all files on the ser
 
 ``` scp -r username@server_ip:/path_to_remote_directory local-machine/path_to_the_directory/ ```
 
-Make sure that the source directory doesn’t have a forward slash at the end of the path, at the same time the destination path *must* have a forward slash.
+Make sure that the source directory doesn’t have a forward slash at the end of the path, at the same time the destination path == must == have a forward slash.
 
 ### Copy all files in a remote directory to a local directory:
 
